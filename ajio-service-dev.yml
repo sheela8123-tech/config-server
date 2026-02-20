@@ -1,9 +1,9 @@
 spring:
-  application:
-    name: ajio-user
+  profiles:
+    active: dev   # active profile
 
   datasource:
-    url: jdbc:mysql://host.docker.internal:3306/ajio_user_dev
+    url: jdbc:mysql://host.docker.internal:3306/orders_db
     username: root
     password: Sharankumar@123
 
@@ -19,6 +19,4 @@ eureka:
     register-with-eureka: true
     fetch-registry: true
 
-# Optional: server port for your service
-server:
-  port: 8081
+
